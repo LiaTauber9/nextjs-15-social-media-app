@@ -1,16 +1,16 @@
 import type { Metadata } from 'next';
-import localFont from 'next/font/local';
+// import localFont from 'next/font/local';
 import './globals.css';
 
-const geistSans = localFont({
-  src: './fonts/GeistSans.woff',
-  variable: '--font-geist-sans',
-});
+// const geistSans = localFont({
+//   src: './fonts/GeistSans.woff',
+//   variable: '--font-geist-sans',
+// });
 
-const geistMono = localFont({
-  src: './fonts/GeistMonoVF.woff',
-  variable: '--font-geist-mono',
-});
+// const geistMono = localFont({
+//   src: './fonts/GeistMonoVF.woff',
+//   variable: '--font-geist-mono',
+// });
 export const metadata: Metadata = {
   title: {
     template: '%s | bugbook',
@@ -27,7 +27,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+      //   className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         {children}
       </body>
