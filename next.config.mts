@@ -1,4 +1,4 @@
-import type { NextConfig } from "next";
+import type { NextConfig } from 'next';
 
 const nextConfig: NextConfig = {
   experimental: {
@@ -6,6 +6,7 @@ const nextConfig: NextConfig = {
       dynamic: 30,
     },
   },
+  serverExternalPackages: ['@node-rs/argon2'],
 };
 
 export default nextConfig;

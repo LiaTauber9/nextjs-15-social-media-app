@@ -1,10 +1,10 @@
-import type { Metadata } from "next";
-import localFont from "next/font/local";
-import "./globals.css";
+import type { Metadata } from 'next';
+import localFont from 'next/font/local';
+import './globals.css';
 
 const geistSans = localFont({
   src: '/fonts/GeistSans.woff',
-  variable: "--font-geist-sans",
+  variable: '--font-geist-sans',
 });
 
 const geistMono = localFont({
@@ -13,10 +13,10 @@ const geistMono = localFont({
 });
 export const metadata: Metadata = {
   title: {
-    template: "%s | bugbook",
-    default: "bugbook",
+    template: '%s | bugbook',
+    default: 'bugbook',
   },
-  description: "Social media app",
+  description: 'Social media app',
 };
 
 export default function RootLayout({
